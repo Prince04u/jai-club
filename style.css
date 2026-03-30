@@ -1,27 +1,68 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial;
-  background: #0f172a;
+}
+
+body {
+  background: #020617;
   color: white;
-  text-align: center;
 }
 
-header {
-  padding: 30px;
-}
-
-.hero {
-  margin: 40px;
-}
-
-.content {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-
-article {
-  background: #1e293b;
-  margin: 20px 0;
+/* NAV */
+.nav {
   padding: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: linear-gradient(145deg,#0f172a,#020617);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
   border-radius: 10px;
+  background: linear-gradient(45deg,#00f5ff,#00ff87);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 40px;
 }
